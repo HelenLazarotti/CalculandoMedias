@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Manjari&display=swap');
+
+:root {
+    --cinza: #1C1C1C;
+    --cinza-claro: #DCDCDC;
+    --azul: #008080;
+    --branco: #fff;
+    --vermelho: #8B0000;
+    --amarelo: #FFD700;
+    --verde: #7FF000;
+}
+body{
+    marigin: 0;
+    padding: 0;
+    background-color: var(--cinza);
+    font-family: 'Manjari', sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20em;
+    height: 30em;
+    background-color: var(--azul);
+    margin: auto auto;
+    border-radius: 1em;
+    margin-top: 8em;
+}
+.title{
+    font-weight: bold;
+    font-size: 30px;
+    color: var(--branco);
+
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+}
+.content_notes{
+    padding: 0.6em;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    
+}
+.note{
+    padding: 0.6em;
+    border: none;
+    border-radius: 0.5em;
+    font-size: 16px;
+    margin-top: 0.2em;
+    background-color: var(--cinza-claro);
+}
+.box_buttons{
+    padding: 2em;
+}
+.btn{
+    padding: 1em;
+    font-size: 16px;
+    border: none;
+    border-radius: 0.5em;
+    font-family: 'Manjari', sans-serif;
+    margin-top: 1em;
+    
+}
+.btn:hover{
+    opacity: 0.9;
+    padding: 1.2em;
+}
+.clear{
+    background-color: var(--branco);
+    color:  ;
+    margin-right: 1.5em;
+}
+.calc {
+   background-color: var(--cinza);
+    color: var(--branco);
+}
+.oficial_note{
+    font-size: 55px;
+    font-weight: bold;
+    color: var(--cinza);
+}
+.info_note{
+    font-size: 25px;
+    font-weight: bold;
+}
+.bad{
+    color: var(--vermelho);
+}
+.invalid{
+    color: var(--amarelo);
+}
+.good{
+    color: var(--verde);
+}
+.back{
+    background-color: var(--cinza);
+    color: var(--branco);
+}
+.hide{
+    display: none;
+}
