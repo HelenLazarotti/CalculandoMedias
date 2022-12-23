@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <section class="container box_one">
+        <h2 class="title">Calcule sua Média</h2>
+
+        <div class="box">
+            <div class="content_notes">
+                <label for="note" class="label">Nota 1:</label>
+                <input type="text" class="note" placeholder="Ex: 8,5" id="n1">
+            </div>
+
+            <div class="content_notes">
+                <label for="note" class="label">Nota 2:</label>
+                <input type="text" class="note" placeholder="Ex: 5" id="n2">
+            </div>
+
+            <div class="content_notes">
+                <label for="note" class="label">Nota 3:</label>
+                <input type="text" class="note" placeholder="Ex: 6,6" id="n3">
+            </div>
+        </div>
+
+        <div class="box_buttons">
+            <button class="btn clear" onclick="clearInputs()">Limpar</button>
+            <button class="btn calc" onclick="calc()">Calcular</button>
+        </div>
+    </section>
+
+    <section class="container box_two hide">
+        <h2 class="title">Nota Final</h2>
+
+        <p class="oficial_note"></p>
+        <p class="info_note"></p>
+        
+        <button class="btn back" onclick="backCalculadora()">Voltar</button>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
